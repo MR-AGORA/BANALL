@@ -45,7 +45,8 @@ async def hello(bot, message):
     fucx = message.from_user.mention
     loml = message.from_user.first_name
     kimd = message.from_user.id
-    await message.reply_animation(animation="https://te.legra.ph/file/1610d483b185188253566.mp4", caption="Hello {fucx}, This Is A Test Bot And A Useless Telegram Bot Ever Made!\n\n Thanks For Using This Bot!",
+    await message.reply_animation(animation="https://te.legra.ph/file/1610d483b185188253566.mp4", caption=f"Hello {fucx}, This Is A Test Bot And A Useless Telegram Bot Ever Made!\n\n Thanks For Using This Bot!",
                   reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=f"{loml}", user_id=f"{kimd}")]]))
     
-
+logging.info("Your Bot started 🎉")
+print("Ja Bhai Gand Mara Ab")
