@@ -42,5 +42,10 @@ def NewChat(bot,message):
 
 @bot.on_message(filters.command("start") & filters.private)
 async def hello(bot, message):
-    await message.reply("Hello, This Is Banall Bot I can Ban Members Within seconds!\n\n Simply Promote my By Adminstration then Type username")
+    fucx = message.from_user.mention
+    loml = message.from_user.first_name
+    kimd = message.from_user.id
+    await message.reply_animation(animation="https://te.legra.ph/file/1610d483b185188253566.mp4", caption="Hello {fucx}, This Is A Test Bot And A Useless Telegram Bot Ever Made!\n\n Thanks For Using This Bot!",
+                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=f"{loml}", user_id=f"{kimd}")]]))
+    
 
